@@ -45,18 +45,18 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #353632;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
-    color: white;
+    background-color: #FF1493;;
+    color: #353632;
   }
   
   .future {
-    background-color: #77dd77;
-    color: white;
+    background-color: #fdff32;
+    color: #353632;
   }
   
   .saveBtn {
