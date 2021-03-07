@@ -1,156 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css"/>
-    <title>Work Day Scheduler</title>
-  </head>
-​
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Time Block</h1>
-      <p class="lead">Good Morning Giselle! Here's what your schedule looks like for today.</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-1" id="hour-9" class="time-block">
-            <time>9:00 AM</time>
-          </div>
-          <div class="col-sm-10">
-            <textarea class="desciption"></textarea>
-          </div>
-          <div class="col-sm-1">
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-          </div>
-        </div>
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+            <link
+              rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            />
+            <link
+              rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+              crossorigin="anonymous"
+            />
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 
-        <div class="row">
-            <div class="col-sm-1" id="hour-10" class="time-block">
-              10:00 AM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-1" id="hour-11" class="time-block">
-              11:00 AM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-1" id="hour-12" class="time-block">
-              12:00 PM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-1" id="hour-1" class="time-block">
-              1:00 PM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-1" id="hour-2" class="time-block">
-              2:00 PM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-1" id="hour-3" class="time-block">
-              3:00 PM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-1" id="hour-4" class="time-block">
-              4:00 PM
-            </div>
-            <div class="col-sm-10">
-              <textarea class="desciption"></textarea>
-            </div>
-            <div class="col-sm-1">
-              <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            </div>
-          </div>
-      </div>
-
-    
-      <!-- 
-        create a div for each of the 8 timeblocks
-        
-​
-        assign a bootstrap class of row and a class of time-block
-        13-Ins_Bootstrap-Layout and 14-Stu_Bootstrap-Layout
-​
-        give a unique id - this will be the key that the user data will be stored with in localStorage
-​
-        give it a `data-hour` attribute (9-17) that corresponds to the hour it represents
-      -->
-​
-      <!-- 
-        create a div, a textarea and a button inside each timeBlock
-​
-        the div will hava class of hour, the textarea will have a class of desciption, and the button will have a bootstrap class of btn and a class of saveBtn
-​
-        add layout col- classes to each
-        13-Ins_Bootstrap-Layout and 14-Stu_Bootstrap-Layout
-      -->
-    
-​
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/script.js"></script>
-  </body>
-</html>
+            <link rel="stylesheet" href="assets/style.css"/>
+            <title>Work Day Scheduler</title>
+          </head>
+        ​
+          <body>
+            <header class="jumbotron">
+              <h1 class="display-3">Time Block</h1>
+              <p class="lead">A goal without a plan is just a wish.</p>
+              <p id="currentDay" class="lead"></p>
+            </header>
+            
+              </div>
+              <div class="container">
+                <div class="input-group input-group-lg time-block" data-hour="9">
+                    <label for="colHour09" class="col-sm-2 col-form-label col-form-label-lg hour">9 AM</label>
+                    <textarea class="textarea form-control" id="text-09">Start your day</textarea>
+                    <button class="saveBtn" type="button" id="btn-09"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="10">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">10 AM</label>
+                    <textarea class="textarea form-control" id="text-10"></textarea>
+                    <button class="saveBtn" type="button" id="btn-10"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="11">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">11 AM</label>
+                    <textarea class="textarea form-control" id="text-11"></textarea>
+                    <button class="saveBtn" type="button" id="btn-11"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="12">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">12 PM</label>
+                    <textarea class="textarea form-control" id="text-12"></textarea>
+                    <button class="saveBtn" type="button" id="btn-12"><i class="fas fa-save"></i></button>
+                  </div>
+                 
+                  <div class="input-group input-group-lg time-block" data-hour="13">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">1 PM</label>
+                    <textarea class="textarea form-control" id="text-13"></textarea>
+                    <button class="saveBtn" type="button" id="btn-13"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="14">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">2 PM</label>
+                    <textarea class="textarea form-control" id="text-14"></textarea>
+                    <button class="saveBtn" type="button" id="btn-14"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="15">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">3 PM</label>
+                    <textarea class="textarea form-control" id="text-15"></textarea>
+                    <button class="saveBtn" type="button" id="btn-15"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="16">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">4 PM</label>
+                    <textarea class="textarea form-control" id="text-16"></textarea>
+                    <button class="saveBtn" type="button" id="btn-16"><i class="fas fa-save"></i></button>
+                  </div>
+                  
+                  <div class="input-group input-group-lg time-block" data-hour="17">
+                    <label for="colHour10" class="col-sm-2 col-form-label col-form-label-lg hour">5 PM</label>
+                    <textarea class="textarea form-control" id="text-17"></textarea>
+                    <button class="saveBtn" type="button" id="btn-17"><i class="fas fa-save"></i></button>
+                  </div>
+              </div>
+          
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+              <script src="assets/script.js"></script>
+            </body>
+          </html>
+            
+              <!-- 
+                create a div for each of the 8 timeblocks
+                
+        ​
+                assign a bootstrap class of row and a class of time-block
+                13-Ins_Bootstrap-Layout and 14-Stu_Bootstrap-Layout
+        ​
+                give a unique id - this will be the key that the user data will be stored with in localStorage
+        ​
+                give it a `data-hour` attribute (9-17) that corresponds to the hour it represents
+              -->
+        ​
+              <!-- 
+                create a div, a textarea and a button inside each timeBlock
+        ​
+                the div will hava class of hour, the textarea will have a class of desciption, and the button will have a bootstrap class of btn and a class of saveBtn
+        ​
+                add layout col- classes to each
+                13-Ins_Bootstrap-Layout and 14-Stu_Bootstrap-Layout
+              -->
+            
+        ​
+           
+       
+       
+      

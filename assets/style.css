@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Homemade Apple', cursive;
     font-size: 16px;
     line-height: 1;
   }
@@ -12,11 +12,13 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
-  
+  div {
+    padding-bottom: 3px;
+  }
   .jumbotron {
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background-color: #353632;
+    color: #f0f0f0;
     border-radius: 0;
     border-bottom: 10px solid black;
   }
@@ -59,10 +61,11 @@ body {
   
   .saveBtn {
     border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06AED5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #353632;
     color: white;
+    padding: 20px;
   }
   
   .saveBtn i:hover {
